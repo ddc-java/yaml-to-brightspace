@@ -19,7 +19,7 @@ inputs:
 
   checklist-yaml-files:
     description: "One or more file path specifications for input checklist YAML files; may contain wildcards."
-    default: "checklists/*.yaml checklists/*.yml"
+    default: "checklists/*.yaml"
   
   output-directory: 
     description: "Target subdirectory (in GitHub workspace directory) for output XML resources."
