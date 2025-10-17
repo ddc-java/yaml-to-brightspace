@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<manifest
+  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+  xmlns:d2l_2p0="http://desire2learn.com/xsd/d2lcp_v2p0"
+  xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+  <metadata>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:language>en-us</imsmd:language>
+      </imsmd:general>
+    </imsmd:lom>
+  </metadata>
+  <resources>
+    <!-- TODO Add support for multiple resources.-->
+    <resource
+      identifier="res_chklist"
+      type="webcontent"
+      d2l_2p0:material_type="d2lchecklist"
+      d2l_2p0:link_target=""
+      href="checklist_d2l.xml"
+      title=""/>
+  </resources>
+</manifest>
