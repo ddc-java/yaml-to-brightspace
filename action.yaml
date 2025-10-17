@@ -17,7 +17,7 @@ description: "Convert from content in YAML input files to Brightspace resource d
 
 inputs:
 
-  checklists:
+  checklist-yaml-files:
     description: "One or more file path specifications for input checklist YAML files; may contain wildcards."
     default: checklists/*.yaml checklists/*.yml
   
@@ -43,5 +43,9 @@ runs:
       shell: bash
 
     - name: Convert YAML to Brightspace resources
-      run: "${{ github.action_path }}/bin/yaml2brightspace ${{ github.workspace }}/${{ inputs.checklists }} --output-dir ${{ github.workspace }}/${{ inputs.output-directory}}"
+      run: "${{ github.action_path }}/bin/yaml2brightspace ${{ github.workspace }}/${{ inputs.checklist-yaml-files }} --output-dir ${{ github.workspace }}/${{ inputs.output-directory}}"
+      shell: bash
+
+    - name: Copy manifest
+      run: "cp ${{ github.action_path }}/manifest/* ${{ github.workspace }}/${{ inputs.output-directory}}"
       shell: bash
