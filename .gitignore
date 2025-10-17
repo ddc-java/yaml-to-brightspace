@@ -20,7 +20,7 @@ out/
 .externalToolBuilders/
 .settings/
 .metadata/
-bin/
+# bin/
 tmp/
 
 *.tmp
